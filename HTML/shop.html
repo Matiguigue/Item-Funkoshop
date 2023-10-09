@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Shop | Funkoshop</title>
+  <link rel="stylesheet" href="../styles/shop.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Geologica&family=Inter&family=Raleway:wght@300&family=Silkscreen&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Geologica&family=Inter&family=Raleway:wght@300;400&family=Silkscreen&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <!--Inicio del Header -->
+    <nav class="navbar container">
+      <picture class="navbar__logo">
+        <a href="/home.html"><img src="/img/branding/logo_light_horizontal.svg" alt="logotipo">
+        </a>
+      </picture>
+
+      <ul class="navbar__menu">
+        <li class="navbar__item with-submenu"><a class="navbar__link with-icon" href="/pages/shop.html">SHOP
+            <iconify-icon class="navbar__item--icon" icon="tabler:chevron-down"></iconify-icon></a>
+          <ul class="submenu">
+            <li class="submenu__item">
+              <a class="submenu__link" href="">Funkos</a>
+            </li>
+            <li class="submenu__item">
+              <a class="submenu__link" href="">Remeras</a>
+            </li>
+            <li class="submenu__item">
+              <a class="submenu__link" href="">Llaveros</a>
+            </li>
+          </ul>
+        </li>
+        <li class="navbar__item"><a class="navbar__link" href="/pages/contact.html">CONTACTO</a></li>
+        <li class="navbar__item"><a class="navbar__link" href="/pages/login.html">LOGIN</a></li>
+        <li class="navbar__item"><a class="navbar__cart" href="/pages/cart.html"><img
+              src="/img/icons/cart-icon.svg" alt="icono de carrito"></a></li>
+      </ul>
+    </nav>
+  </header> <!-- Fin del Header -->
+
+  <aside>
+
+    <form class="form__content">
+      <p class="form__text">BUSCAR</p>
+      <input class="form__input--text" type="text" placeholder="Item o categoria">
+      <p class="form__text">ORDENAR POR</p>
+
+      <select class="form__select" name="orden" id="orden">
+        <option value="Mayor a meno">Mayor a menor</option>
+        <option value="Menor a mayor">Menor a mayor</option>
+        <option value="Mas relevante">Mas relevante</option>
+        <option value="Mas vendid">Mas vendido</option>
+      </select>
+
+      <p class="form__text">PRECIO</p>
+      <label class="form__label--num1" for="num1">MIN</label>
+      <input type="number" name="quantity" id="quantity" min="0" max="99.999">
+      <label class="form__label--num2" for="num2">- MAX</label>
+      <input class="form__input--number" type="number" name="quantity" id="quantity" min="0" max="99.999">
+      <p class="form__text">FILTRAR</p>
+      <input class="form__input--check" type="checkbox"> <label class="form__label--check" for="new">Nuevos</label>
+      <input class="form__input--check" type="checkbox"> <label class="form__label--check" for="offer">Ofertas</label>
+      <input class="form__input--check" type="checkbox"> <label class="form__label--check" for="special edition">Edición especial</label>
+      <input class="form__input--check" type="checkbox"> <label class="form__label--check" for="favourites">Favoritos</label>
+
+    </form>
+
+
+
+
+  </aside>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <footer class="footer">
+        <nav class="navbar container">
+          <ul class="navbar__item">
+            <li class="navbar__item">
+              <a class="navbar__link" href="./pages/shop.html">SHOP</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="./pages/register.html">REGISTRARSE</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="./pages/login.html">LOGIN</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="./pages/contact.html">CONTACTO</a>
+            </li>
+          </ul>
+          <picture>
+            <img src="/multimedia/branding/isotype.svg" alt="Isotipo">
+          </picture> 
+        </nav>
+        <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+      </footer> -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+</body>
+
+</html>
